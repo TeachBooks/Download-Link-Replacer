@@ -71,42 +71,17 @@ jobs:
       id-token: write  # IMPORTANT: mandatory for sigstore
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      
     - name: Download all the dists
       uses: actions/download-artifact@v4
       with:
         name: python-package-distributions
         path: dist/
-        
     - name: Sign the dists with Sigstore
       uses: sigstore/gh-action-sigstore-python@v2.1.1
       with:
         inputs: >-
           ./dist/*.tar.gz
           ./dist/*.whl
-
-    - name: Set up Node.js (for Changelog generation)
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-
-    - name: Install Conventional Changelog CLI
-      run: npm install -g conventional-changelog-cli
-
-    - name: Generate Changelog
-      run: |
-        # Generate a changelog file for the new release
-        conventional-changelog -p angular -i CHANGELOG.md -s
-        git add CHANGELOG.md
-        git commit -m "chore(release): update changelog"
-
-    - name: Push Changelog to GitHub
-      env:
-        GITHUB_TOKEN: ${{ github.token }} 
-      run: git push origin HEAD:main
-      
     - name: Create GitHub Release
       env:
         GITHUB_TOKEN: ${{ github.token }}
@@ -115,7 +90,6 @@ jobs:
         '${{ github.ref_name }}'
         --repo '${{ github.repository }}'
         --notes ""
-        
     - name: Upload artifact signatures to GitHub Release
       env:
         GITHUB_TOKEN: ${{ github.token }}
