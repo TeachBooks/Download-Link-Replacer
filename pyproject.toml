@@ -9,6 +9,7 @@ authors = [
     { name = "rstular", email = "r.stular@student.tudelft.nl" }
 ]
 description = "A tool to replace download links in Jupyter books."
+readme = "README.md"
 dependencies = [
     "sphinx"
 ]
