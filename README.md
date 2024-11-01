@@ -1,6 +1,32 @@
 # Sphinx download link replacer
 
-This script allows you to replace the download links on the generated [Jupyter book](https://jupyterbook.org/en/stable/intro.html) pages.
+This sphinx extension allows you to replace the download links on the generated [Jupyter book](https://jupyterbook.org/en/stable/intro.html) pages.
+
+## Installation
+To install the Download-Link-Replacer follow these steps:
+
+**Step 1: Install the Package**
+
+Install the `download-link-replacer` package using `pip`:
+```
+pip install download-link-replacer
+```
+
+**Step 2: Add to `requirements.txt`**
+
+Make sure that the package is included in your project's `requirements.txt` to track the dependency:
+```
+download-link-replacer
+```
+
+**Step 3: Enable in `_config.yml`**
+
+In your `_config.yml` file, add the extension to the list of Sphinx extra extensions:
+```
+sphinx: 
+    extra_extensions:
+        - download-link-replacer
+```
 
 ## Usage
 
