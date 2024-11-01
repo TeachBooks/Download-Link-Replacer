@@ -1,4 +1,4 @@
-# Sphinx download link replacer
+# Sphinx extension: download link replacer
 
 ```{admonition} User types
 :class: tip
