@@ -1,4 +1,4 @@
-# Sphinx download link replacer
+# Sphinx extension: download link replacer
 
 This sphinx extension allows you to replace the download links on the generated [Jupyter book](https://jupyterbook.org/en/stable/intro.html) pages.
 
