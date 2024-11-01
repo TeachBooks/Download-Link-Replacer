@@ -1,5 +1,10 @@
 # Sphinx download link replacer
 
+```{admonition} User types
+:class: tip
+This section is useful for user type 4-5.
+```
+
 This sphinx extension allows you to replace the download links on the generated [Jupyter book](https://jupyterbook.org/en/stable/intro.html) pages.
 
 ## Installation
