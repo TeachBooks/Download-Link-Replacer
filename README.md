@@ -4,7 +4,7 @@ This sphinx extension allows you to replace the download links on the generated 
 
 You can control the download option of the book in two ways:
  - Disabling downloading using cell tags `disable-download-page`
- - Add / replace download link with custom link using shpinx-`download-link-replacer`
+ - Add / replace download link with custom link using sphinx-`download-link-replacer`
 
 ## 1. Disabling download
 If you add `disable-download-page` as a cell tag to a cell in a python notebook, the download button ({fa}`download`) will disappear from the topright corner. The cell tag can be added to any code cell in the notebook. This function might be handy if your page includes code which you don't want the students to see. Be aware that this also removes the option to download a PDF of the page.
