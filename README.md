@@ -1,9 +1,11 @@
-# Sphinx extension: Download link replacer
+# Download link replacer
 
 ```{admonition} User types
 :class: tip
 This section is useful for user type 4-5.
 ```
++++
+{bdg-primary}`Sphinx Extension`
 
 You can control the download option of the book in two ways:
  - Disabling downloading using cell tags `disable-download-page`
