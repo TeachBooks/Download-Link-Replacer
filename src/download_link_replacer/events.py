@@ -73,8 +73,12 @@ def _add_link_to_context(link: LinkEntry, dl_buttons: list[dict[str, str]]):
             if button["type"] == "link" and button["label"] == "download-source-button":
                 button["url"] = link.url
                 button["download"] = link.url.split("/")[-1]
-                if link.text is not None:
-                    button["text"] = link.text
+                # Generate the HTML for the download link
+                button["html"] = (
+                    f'<a href="{link.url}" download="{link.url.split("/")[-1]}" '
+                    f'class="btn btn-primary">'
+                    f'{link.text or link.url.split("/")[-1]}</a>'
+                )
                 break
         else:
             SPHINX_LOGGER.warning(
@@ -84,13 +88,12 @@ def _add_link_to_context(link: LinkEntry, dl_buttons: list[dict[str, str]]):
         # Otherwise, add a new button
         dl_buttons.append(
             {
-                "type": "link",
-                "url": link.url,
-                "text": link.text or link.url.split("/")[-1],
-                "tooltip": "Download",
-                "icon": "fas fa-file",
-                "label": "download-button",
-                "download": link.url.split("/")[-1],
+                "type": "html",  # Indicate this is raw HTML
+                "html": (
+                    f'<a href="{link.url}" download="{link.url.split("/")[-1]}" '
+                    f'class="btn btn-primary">'
+                    f'{link.text or link.url.split("/")[-1]}</a>'
+                ),
             }
         )
 
