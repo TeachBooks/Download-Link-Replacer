@@ -72,6 +72,7 @@ def _add_link_to_context(link: LinkEntry, dl_buttons: list[dict[str, str]]):
         for button in dl_buttons:
             if button["type"] == "link" and button["label"] == "download-source-button":
                 button["url"] = link.url
+                button["download"] = link.url.split("/")[-1]
                 if link.text is not None:
                     button["text"] = link.text
                 break
@@ -89,6 +90,7 @@ def _add_link_to_context(link: LinkEntry, dl_buttons: list[dict[str, str]]):
                 "tooltip": "Download",
                 "icon": "fas fa-file",
                 "label": "download-button",
+                "download": link.url.split("/")[-1],
             }
         )
 
