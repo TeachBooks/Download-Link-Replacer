@@ -1,5 +1,4 @@
-# Download link replacer
-
+````{margin}
 ```{attributiongrey} Attribution
 :class: attribution
 > This page reuses BSD 3-Clause License content from {cite:t}`download_link`. {fa}`quote-left`{ref}`Find out more here.<external_resources>`
@@ -11,6 +10,9 @@ This section is useful for user type 4-5.
 ```
 +++
 {bdg-primary}`Sphinx Extension`
+````
+
+# Download link replacer
 
 You can control the download option of the book in two ways:
  - Disabling downloading using cell tags `disable-download-page`
