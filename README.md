@@ -11,8 +11,8 @@ This section is useful for user type 4-5.
 ```
 +++
 {bdg-primary}`Sphinx Extension`
-{bdg-link-light}`Included in TeachBooks Template <https://teachbooks.io/manual/external/template/README.html>`
-{bdg-link-light}`Included in TeachBooks Favourites <https://teachbooks.io/manual/features/favourites.html>`
+{bdg-link-light}`Included in TeachBooks Template <../template/README.html>`
+{bdg-link-light}`Included in TeachBooks Favourites <../../features/favourites.html>`
 ````
 
 # Download link replacer
@@ -68,4 +68,4 @@ sphinx:
 ```
 
 ## Contribute
-This tool's repository is stored on [GitHub](https://github.com/TeachBooks/Download-Link-Replace). The `README.md` of the branch `manual_docs` is also part of the [TeachBooks manual](https://teachbooks.io/manual/external/Download-Link-Replacer/README.html) as a submodule. If you'd like to contribute, you can create a fork and open a pull request on the [GitHub repository](https://github.com/TeachBooks/Download-Link-Replacer). To update the `README.md` shown in the TeachBooks manual, create a fork and open a merge request for the [GitHub repository of the manual](https://github.com/TeachBooks/manual). If you intent to clone the manual including its submodules, clone using: `git clone --recurse-submodulesgit@github.com:TeachBooks/manual.git`.
+This tool's repository is stored on [GitHub](https://github.com/TeachBooks/Download-Link-Replace). The `README.md` of the branch `manual_docs` is also part of the [TeachBooks manual](../Download-Link-Replacer/README.md) as a submodule. If you'd like to contribute, you can create a fork and open a pull request on the [GitHub repository](https://github.com/TeachBooks/Download-Link-Replacer). To update the `README.md` shown in the TeachBooks manual, create a fork and open a merge request for the [GitHub repository of the manual](https://github.com/TeachBooks/manual). If you intent to clone the manual including its submodules, clone using: `git clone --recurse-submodulesgit@github.com:TeachBooks/manual.git`.
