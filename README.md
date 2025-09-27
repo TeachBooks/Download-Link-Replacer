@@ -12,7 +12,7 @@ This section is useful for user type 4-5.
 +++
 {bdg-primary}`Sphinx Extension`
 {bdg-link-light}`Included in TeachBooks Template <https://teachbooks.io/manual/external/template/README.html>`
-{bdg-link-light}`Included in TeachBooks Favourites <https://teachbooks.io/manual/favourites/features/favourites.html>`
+{bdg-link-light}`Included in TeachBooks Favourites <https://teachbooks.io/manual/features/favourites.html>`
 ````
 
 # Download link replacer
