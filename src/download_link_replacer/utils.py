@@ -1,7 +1,7 @@
-from pkg_resources import get_distribution
+from importlib.metadata import version
 from sphinx.util import logging
 
-VERSION = get_distribution("download_link_replacer").version
+VERSION = version("download_link_replacer")
 
 SPHINX_LOGGER = logging.getLogger(__name__)
 ENV_PROPERTY_NAME = "download_link_replacements"
