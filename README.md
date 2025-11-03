@@ -24,7 +24,7 @@ The `replace_default` key is optional. When set to `True`, the default download 
 
 The directive can appear multiple times in a single file.
 
-A potential application of this functionality is when creating a page in which students have to do some coding. Downloading the page allows the student to save their work and work with their local environment. However, the original source file might include code (jupyterbook formatting, widgets, answers) which is not necessary for students. You can make a copy of the notebook file without these elements and replace the {fa}`file`{guilabel}`.ipynb` link to this custom notebook file. Furthermore, you can add any additional data as an additional {fa}`file`{guilabel}`.zip` file. 
+A potential application of this functionality is when creating a page in which students have to do some coding. Downloading the page allows the student to save their work and work with their local environment. However, the original source file might include code (TeachBook formatting, widgets, answers) which is not necessary for students. You can make a copy of the notebook file without these elements and replace the {fa}`file`{guilabel}`.ipynb` link to this custom notebook file. Furthermore, you can add any additional data as an additional {fa}`file`{guilabel}`.zip` file. 
 
 ### 2.1. Installation
 To install the Download-Link-Replacer follow these steps:

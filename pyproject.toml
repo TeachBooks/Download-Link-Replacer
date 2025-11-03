@@ -8,7 +8,7 @@ dynamic = ["version"]
 authors = [
     { name = "rstular", email = "r.stular@student.tudelft.nl" }
 ]
-description = "A tool to replace download links in Jupyter books."
+description = "A tool to replace download links in sphinx books, JupyterBooks v1 and TeachBooks."
 readme = "README.md"
 dependencies = [
     "sphinx",
