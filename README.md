@@ -60,11 +60,11 @@ download-link-replacer
 
 **Step 3: Enable in `_config.yml`**
 
-In your `_config.yml` file, add the extension to the list of Sphinx extra extensions:
+In your `_config.yml` file, add the extension to the list of Sphinx extra extensions (_note the underscores!_):
 ```
 sphinx: 
     extra_extensions:
-        - download-link-replacer
+        - download_link_replacer
 ```
 
 ## Contribute
